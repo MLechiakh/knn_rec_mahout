@@ -24,16 +24,18 @@ public class Main {
 
 	public static void main(String[] args) {
 
+		
+		ParseFile p;
+		int nri= 1 ;
+		float threshold=3 ;
+		String rootPath= System.getProperty("user.dir") ;
+		String fileName= "TestSet0_" ;
+		
 		try {
-			System.setOut(new PrintStream(new FileOutputStream("C:\\Users\\Moham\\git\\mahout\\mr\\logs\\resultLog.log")));
+			System.setOut(new PrintStream(new FileOutputStream(rootPath+"\\logs\\resultLog.log")));
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
 		}
-		ParseFile p;
-		int nri= 200 ;
-		float threshold=3 ;
-		String rootPath= System.getProperty("user.dir") ;
-		String fileName= "TestSet0" ;
 		
 		try {
 			File myFile= new File(rootPath+"\\Datasets\\"+fileName+".csv");
@@ -49,13 +51,15 @@ public class Main {
 //			}
 			RecommenderBuilder builder = new MyRecommenderBuilder(); 
 			KFoldRecommenderIRStatsEvaluator evaluatorIRStats = new KFoldRecommenderIRStatsEvaluator(model, 5); /* 5-fold */
-	//		KFoldRecommenderPredictionEvaluator evaluatorPred = new KFoldRecommenderPredictionEvaluator(model, 5);
-			IRStatistics irstats = evaluatorIRStats.evaluate(builder, nri, threshold);
+		//	KFoldRecommenderPredictionEvaluator evaluatorPred = new KFoldRecommenderPredictionEvaluator(model, 5);
+			int[] nra= new int[] {20,30,40,60,70,80,90} ;
+			for(int i=0; i<nra.length; i++) {
+			IRStatistics irstats = evaluatorIRStats.evaluate(builder, nra[i], threshold);
 		//	PredictionStatistics prestats = evaluatorPred.evaluate(builder) ;
 
 
 			System.out.println("****************** Test*******************");
-			System.out.println("number of recommanded items: "+nri);
+			System.out.println("number of recommanded items: "+nra[i]);
 			System.out.println("Threshold: "+threshold);
 			System.out.println();
 			System.out.println("Precision: "+irstats.getPrecision());
@@ -63,8 +67,8 @@ public class Main {
 //			System.out.println("MAE= "+prestats.getMAE());
 //			System.out.println("RMSE= "+prestats.getRMSE());
 //			System.out.println("More info= "+prestats.getMoreInfo());
-
-			
+			break ;
+			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -1,0 +1,14 @@
+****************** Precision and Recall of brute force recommenders *******************
+number of recommanded items: 10
+Threshold: 3.0
+k : 17
+
+Precision: 0.029
+Recall: 0.027947639824807007
+****************** Precision and Recall of brute force recommenders *******************
+number of recommanded items: 20
+Threshold: 3.0
+k : 17
+
+Precision: 0.034499999999999996
+Recall: 0.06276562498786993
