@@ -210,7 +210,7 @@ Object[] buildTest(FastByIDMap<PreferenceArray> fold) throws TasteException {
 	public void runScript(String arg){
 	    Process process;
 		try{
-	          process = Runtime.getRuntime().exec(new String[]{rootPath+"\\py_scripts\\dist\\graph_learning",arg});
+	          process = Runtime.getRuntime().exec(new String[]{rootPath+"\\py_scripts\\dist\\graph_learning ",arg});
 	          mProcess = process;
 	    }catch(Exception e) {
 	       System.out.println("Exception Raised" + e.toString());
