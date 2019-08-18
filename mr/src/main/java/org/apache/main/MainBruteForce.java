@@ -24,7 +24,7 @@ public class MainBruteForce {
 		Properties config;
 		config = new Properties();
 		FileInputStream fis;
-		float threshold=3 ;
+		float threshold=Float.parseFloat(args[3]) ;
 		String rootPath= System.getProperty("user.dir") ;
 		
 
@@ -64,7 +64,7 @@ public class MainBruteForce {
 			
 			/* Measure of Precision and Recall of recommenders */
 			else if(args[1].equals("accuracy")) {
-				int p=3 ;
+				int p=4 ;
 				while(p<args.length) {
 					KFoldRecommenderIRStatsEvaluator evaluatorIRStats = new KFoldRecommenderIRStatsEvaluator(model, 5); /* 5-fold */
 					irstats = evaluatorIRStats.evaluate(builder, Integer.parseInt(args[p]), threshold);

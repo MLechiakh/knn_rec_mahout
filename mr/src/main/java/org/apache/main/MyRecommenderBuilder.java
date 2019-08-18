@@ -34,11 +34,18 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 	ParseFile p;
 	Process mProcess;
 	String rootPath= System.getProperty("user.dir") ;
+	String path_LBNNG=null ;
+	// weither it's symetric on no symetric lbnn
+	String type_lbnn=null ;
+	float threshold=3 ;
 	public MyRecommenderBuilder(ParseFile p) throws IOException {
 		this.p = p;
 	}
 	
-	public MyRecommenderBuilder() {
+	public MyRecommenderBuilder(String path_lbnng, String lbnn, float threshold) {
+		this.path_LBNNG=path_lbnng ;
+		this.threshold=threshold ;
+		this.type_lbnn=lbnn ;
 	}
 
 	@Override
@@ -51,9 +58,9 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 	@Override
 	public Recommender buildRecommender(DataModel dataModel, Fold fold) throws TasteException {
 		
-		String generatedKnngFilePath="\\Datasets\\KNNG_LBNN.txt" ;
-		String generatedTrainFilePath="\\Datasets\\fold_train.data" ;
-		String generatedTestFilePath="\\Datasets\\fold_test.data" ;
+		String generatedKnngFilePath="/KNNG_LBNN.txt" ;
+		String generatedTrainFilePath="/Datasets/fold_train.data" ;
+		String generatedTestFilePath="/Datasets/fold_test.data" ;
 
 		Object[] arrays= buildTrain(fold.getTraining()) ;
 		Object[] arraysTests= buildTest(fold.getTesting()) ;
@@ -76,11 +83,12 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 		System.out.println("-------------------- fold passage ----------------------");
 
 		System.out.println("Before lunching pyhton file");
-		runScript(rootPath+generatedTrainFilePath);
+		System.out.println(rootPath+generatedTrainFilePath);
+		runScript(rootPath+generatedTrainFilePath, path_LBNNG, type_lbnn, threshold);
 		System.out.println("After lunching pyhton file");
 		
 		try {
-			p = new ParseFile(rootPath+generatedKnngFilePath);
+			p = new ParseFile(path_LBNNG+generatedKnngFilePath);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -207,17 +215,17 @@ Object[] buildTest(FastByIDMap<PreferenceArray> fold) throws TasteException {
 			}
 	}
 	
-	public void runScript(String arg){
+	public void runScript(String arg1, String arg2, String type_lbnn, float threshold){
 	    Process process;
 		try{
-	          process = Runtime.getRuntime().exec(new String[]{rootPath+"\\py_scripts\\dist\\graph_learning ",arg});
+	          process = Runtime.getRuntime().exec(new String[]{rootPath+"/py_scripts/dist/"+type_lbnn,arg1,arg2,arg1, Float.toString(threshold)});
 	          mProcess = process;
 	    }catch(Exception e) {
 	       System.out.println("Exception Raised" + e.toString());
 	    }
 	    InputStream stdout = mProcess.getInputStream();
 	    BufferedReader reader = new BufferedReader(new InputStreamReader(stdout,StandardCharsets.UTF_8));
-	    String line;
+	    String line;	
 	    try{
 	       while((line = reader.readLine()) != null){
 	            System.out.println("stdout: "+ line );

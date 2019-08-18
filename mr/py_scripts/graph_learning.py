@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 import gc
 import sys
 import json
@@ -70,7 +71,7 @@ def build_arrays_no_thresh(file_name, thres):
             user, movie, rating = line.split(" ")[0], line.split(" ")[1], line.split(" ")[2]
             user = int(user)
             movie = int(movie)
-            rating = int(rating)
+            rating = float(rating)
             if len(users_id) != 0:
                 # print("len(users_id)= ",len(users_id)," len(movies_id)= ",len(movies_id))
                 if users_id[u - 1] == user:
@@ -426,7 +427,7 @@ def non_symetric_block_graph_discovery(losses, list_user, list_movies, mu=1, la=
     return similarity
 
 
-def discovery_build_graph(simu_matrix):
+def discovery_build_graph(simu_matrix, path):
     knn_graph = {}
     k = len(simu_matrix)
     for i in range(len(simu_matrix)):
@@ -439,7 +440,8 @@ def discovery_build_graph(simu_matrix):
                     str((sorted_list[len(sorted_list) - m - 1][0]) + 1): sorted_list[len(sorted_list) - m - 1][1]
                 })
 
-    path_parent = "C:/Users/Moham/git/mahout/mr/Datasets/"
+    path_parent = path
+        #"C:/Users/Moham/git/mahout/mr/Datasets/"
 
     with open(path_parent + 'KNNG_LBNN.txt', 'w+') as outfile:
         json.dump(knn_graph, outfile, indent=2)
@@ -476,12 +478,13 @@ if __name__ == "__main__":
     thres = 3
     lambdaa = 0.4
 
-    users_array, movies_array, mv_threshold = build_arrays_no_thresh(sys.argv[1], 3)
+    users_array, movies_array, mv_threshold = build_arrays_no_thresh(sys.argv[1], float(sys.argv[3]))
     #users_array, movies_array, mv_thresh=build_arrays_no_thresh("../Datasets/TestSet0_.data",3)
     # simu,jacc = graph_discovery(users_array[:size], movies_array[:size], mu=1,la=lambdaa)
     simu, jacc = graph_discovery(users_array, mv_threshold, mu=1, la=lambdaa)
     density(simu)
-    #discovery_build_graph(simu)
+
+    discovery_build_graph(simu, sys.argv[2])
 
     print(simu)
     end_time = datetime.now()

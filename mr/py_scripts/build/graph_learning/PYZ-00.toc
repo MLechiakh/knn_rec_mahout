@@ -159,29 +159,49 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.six',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\six.py',
    'PYMODULE'),
-  ('pkg_resources._vendor',
+  ('pkg_resources._vendor.appdirs',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.specifiers',
+  ('pkg_resources._vendor.packaging.markers',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging._structures',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.packaging._compat',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
+  ('pkg_resources._vendor.packaging.version',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'C:\\Program '
@@ -206,29 +226,9 @@
   ('ctypes.macholib.framework',
    'C:\\Program Files\\Python\\Python37\\Lib\\ctypes\\macholib\\framework.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
+  ('pkg_resources._vendor.packaging.requirements',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.appdirs',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
   ('__main__',
    'C:\\Program Files\\Python\\Python37\\Scripts\\pyinstaller.exe\\__main__.py',
@@ -601,12 +601,25 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\PyInstaller\\utils\\hooks\\django.py',
    'PYMODULE'),
+  ('PyInstaller.exceptions',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\PyInstaller\\exceptions.py',
+   'PYMODULE'),
   ('PyInstaller.lib.modulegraph.find_modules',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\PyInstaller\\lib\\modulegraph\\find_modules.py',
    'PYMODULE'),
   ('xml.etree',
    'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\ElementInclude.py',
    'PYMODULE'),
   ('xml.etree.ElementPath',
    'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\ElementPath.py',
@@ -714,11 +727,11 @@
    'C:\\Program Files\\Python\\Python37\\Lib\\_strptime.py',
    'PYMODULE'),
   ('typing', 'C:\\Program Files\\Python\\Python37\\Lib\\typing.py', 'PYMODULE'),
-  ('tracemalloc',
-   'C:\\Program Files\\Python\\Python37\\Lib\\tracemalloc.py',
+  ('fnmatch',
+   'C:\\Program Files\\Python\\Python37\\Lib\\fnmatch.py',
    'PYMODULE'),
-  ('stringprep',
-   'C:\\Program Files\\Python\\Python37\\Lib\\stringprep.py',
+  ('_compat_pickle',
+   'C:\\Program Files\\Python\\Python37\\Lib\\_compat_pickle.py',
    'PYMODULE'),
   ('__future__',
    'C:\\Program Files\\Python\\Python37\\Lib\\__future__.py',
@@ -815,7 +828,6 @@
    'C:\\Program Files\\Python\\Python37\\Lib\\optparse.py',
    'PYMODULE'),
   ('uu', 'C:\\Program Files\\Python\\Python37\\Lib\\uu.py', 'PYMODULE'),
-  ('quopri', 'C:\\Program Files\\Python\\Python37\\Lib\\quopri.py', 'PYMODULE'),
   ('email.feedparser',
    'C:\\Program Files\\Python\\Python37\\Lib\\email\\feedparser.py',
    'PYMODULE'),
@@ -852,7 +864,6 @@
   ('email.charset',
    'C:\\Program Files\\Python\\Python37\\Lib\\email\\charset.py',
    'PYMODULE'),
-  ('base64', 'C:\\Program Files\\Python\\Python37\\Lib\\base64.py', 'PYMODULE'),
   ('email._encoded_words',
    'C:\\Program Files\\Python\\Python37\\Lib\\email\\_encoded_words.py',
    'PYMODULE'),
@@ -888,11 +899,7 @@
   ('email.message',
    'C:\\Program Files\\Python\\Python37\\Lib\\email\\message.py',
    'PYMODULE'),
-  ('bz2', 'C:\\Program Files\\Python\\Python37\\Lib\\bz2.py', 'PYMODULE'),
   ('lzma', 'C:\\Program Files\\Python\\Python37\\Lib\\lzma.py', 'PYMODULE'),
-  ('_compression',
-   'C:\\Program Files\\Python\\Python37\\Lib\\_compression.py',
-   'PYMODULE'),
   ('gzip', 'C:\\Program Files\\Python\\Python37\\Lib\\gzip.py', 'PYMODULE'),
   ('tarfile',
    'C:\\Program Files\\Python\\Python37\\Lib\\tarfile.py',
@@ -909,7 +916,6 @@
    'C:\\Program Files\\Python\\Python37\\Lib\\webbrowser.py',
    'PYMODULE'),
   ('pydoc', 'C:\\Program Files\\Python\\Python37\\Lib\\pydoc.py', 'PYMODULE'),
-  ('getopt', 'C:\\Program Files\\Python\\Python37\\Lib\\getopt.py', 'PYMODULE'),
   ('pdb', 'C:\\Program Files\\Python\\Python37\\Lib\\pdb.py', 'PYMODULE'),
   ('unittest.util',
    'C:\\Program Files\\Python\\Python37\\Lib\\unittest\\util.py',
@@ -918,22 +924,14 @@
    'C:\\Program Files\\Python\\Python37\\Lib\\unittest\\result.py',
    'PYMODULE'),
   ('string', 'C:\\Program Files\\Python\\Python37\\Lib\\string.py', 'PYMODULE'),
-  ('_compat_pickle',
-   'C:\\Program Files\\Python\\Python37\\Lib\\_compat_pickle.py',
-   'PYMODULE'),
-  ('pickle', 'C:\\Program Files\\Python\\Python37\\Lib\\pickle.py', 'PYMODULE'),
   ('logging',
    'C:\\Program Files\\Python\\Python37\\Lib\\logging\\__init__.py',
    'PYMODULE'),
-  ('pprint', 'C:\\Program Files\\Python\\Python37\\Lib\\pprint.py', 'PYMODULE'),
   ('unittest.case',
    'C:\\Program Files\\Python\\Python37\\Lib\\unittest\\case.py',
    'PYMODULE'),
   ('unittest.suite',
    'C:\\Program Files\\Python\\Python37\\Lib\\unittest\\suite.py',
-   'PYMODULE'),
-  ('fnmatch',
-   'C:\\Program Files\\Python\\Python37\\Lib\\fnmatch.py',
    'PYMODULE'),
   ('unittest.loader',
    'C:\\Program Files\\Python\\Python37\\Lib\\unittest\\loader.py',
@@ -953,6 +951,24 @@
   ('doctest',
    'C:\\Program Files\\Python\\Python37\\Lib\\doctest.py',
    'PYMODULE'),
+  ('pprint', 'C:\\Program Files\\Python\\Python37\\Lib\\pprint.py', 'PYMODULE'),
+  ('pickle', 'C:\\Program Files\\Python\\Python37\\Lib\\pickle.py', 'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Program Files\\Python\\Python37\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Program Files\\Python\\Python37\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Program Files\\Python\\Python37\\Lib\\_compression.py',
+   'PYMODULE'),
+  ('bz2', 'C:\\Program Files\\Python\\Python37\\Lib\\bz2.py', 'PYMODULE'),
+  ('stringprep',
+   'C:\\Program Files\\Python\\Python37\\Lib\\stringprep.py',
+   'PYMODULE'),
+  ('quopri', 'C:\\Program Files\\Python\\Python37\\Lib\\quopri.py', 'PYMODULE'),
+  ('getopt', 'C:\\Program Files\\Python\\Python37\\Lib\\getopt.py', 'PYMODULE'),
+  ('base64', 'C:\\Program Files\\Python\\Python37\\Lib\\base64.py', 'PYMODULE'),
   ('stat', 'C:\\Program Files\\Python\\Python37\\Lib\\stat.py', 'PYMODULE'),
   ('genericpath',
    'C:\\Program Files\\Python\\Python37\\Lib\\genericpath.py',
@@ -982,6 +998,7 @@
   ('gettext',
    'C:\\Program Files\\Python\\Python37\\Lib\\gettext.py',
    'PYMODULE'),
+  ('copy', 'C:\\Program Files\\Python\\Python37\\Lib\\copy.py', 'PYMODULE'),
   ('textwrap',
    'C:\\Program Files\\Python\\Python37\\Lib\\textwrap.py',
    'PYMODULE'),
@@ -991,10 +1008,6 @@
   ('tokenize',
    'C:\\Program Files\\Python\\Python37\\Lib\\tokenize.py',
    'PYMODULE'),
-  ('_py_abc',
-   'C:\\Program Files\\Python\\Python37\\Lib\\_py_abc.py',
-   'PYMODULE'),
-  ('copy', 'C:\\Program Files\\Python\\Python37\\Lib\\copy.py', 'PYMODULE'),
   ('datetime',
    'C:\\Program Files\\Python\\Python37\\Lib\\datetime.py',
    'PYMODULE'),
@@ -1023,15 +1036,6 @@
    'PYMODULE'),
   ('psutil._psbsd',
    'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\psutil\\_psbsd.py',
-   'PYMODULE'),
-  ('xml.etree.ElementTree',
-   'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\ElementTree.py',
-   'PYMODULE'),
-  ('xml.etree.ElementInclude',
-   'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\ElementInclude.py',
-   'PYMODULE'),
-  ('xml.etree.cElementTree',
-   'C:\\Program Files\\Python\\Python37\\Lib\\xml\\etree\\cElementTree.py',
    'PYMODULE'),
   ('psutil._psosx',
    'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\psutil\\_psosx.py',
@@ -1249,53 +1253,53 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor',
+  ('setuptools._vendor.packaging.version',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging.requirements',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
   ('setuptools._vendor.pyparsing',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.version',
+  ('setuptools._vendor',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('setuptools._vendor.six',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\six.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging._structures',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.__about__',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\__init__.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging.utils',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
+  ('setuptools._vendor.packaging._structures',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.markers',
+  ('setuptools._vendor.six',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\six.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.__about__',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging._compat',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging',
+  ('setuptools._vendor.packaging.specifiers',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
    'PYMODULE'),
   ('setuptools.msvc',
    'C:\\Program '
@@ -3469,9 +3473,9 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\__init__.py',
    'PYMODULE'),
-  ('pygments.styles.vs',
+  ('pygments.styles.native',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\vs.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\native.py',
    'PYMODULE'),
   ('pygments.token',
    'C:\\Program '
@@ -3481,33 +3485,9 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\style.py',
    'PYMODULE'),
-  ('pygments.styles.native',
+  ('pygments.styles.perldoc',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\native.py',
-   'PYMODULE'),
-  ('pygments.styles.fruity',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\fruity.py',
-   'PYMODULE'),
-  ('pygments.styles.paraiso_dark',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\paraiso_dark.py',
-   'PYMODULE'),
-  ('pygments.styles.murphy',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\murphy.py',
-   'PYMODULE'),
-  ('pygments.styles.monokai',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\monokai.py',
-   'PYMODULE'),
-  ('pygments.styles.xcode',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\xcode.py',
-   'PYMODULE'),
-  ('pygments.styles.arduino',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\arduino.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\perldoc.py',
    'PYMODULE'),
   ('pygments.styles.rainbow_dash',
    'C:\\Program '
@@ -3517,41 +3497,9 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\manni.py',
    'PYMODULE'),
-  ('pygments.styles.borland',
+  ('pygments.styles.trac',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\borland.py',
-   'PYMODULE'),
-  ('pygments.styles.algol',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\algol.py',
-   'PYMODULE'),
-  ('pygments.styles.paraiso_light',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\paraiso_light.py',
-   'PYMODULE'),
-  ('pygments.styles.bw',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\bw.py',
-   'PYMODULE'),
-  ('pygments.styles.algol_nu',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\algol_nu.py',
-   'PYMODULE'),
-  ('pygments.styles.sas',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\sas.py',
-   'PYMODULE'),
-  ('pygments.styles.colorful',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\colorful.py',
-   'PYMODULE'),
-  ('pygments.styles.igor',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\igor.py',
-   'PYMODULE'),
-  ('pygments.styles.vim',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\vim.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\trac.py',
    'PYMODULE'),
   ('pygments.styles.abap',
    'C:\\Program '
@@ -3561,57 +3509,109 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\emacs.py',
    'PYMODULE'),
-  ('pygments.styles.pastie',
+  ('pygments.styles.paraiso_dark',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\pastie.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\paraiso_dark.py',
    'PYMODULE'),
-  ('pygments.styles.perldoc',
+  ('pygments.styles.algol_nu',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\perldoc.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\algol_nu.py',
    'PYMODULE'),
-  ('pygments.styles.autumn',
+  ('pygments.styles.paraiso_light',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\autumn.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\paraiso_light.py',
+   'PYMODULE'),
+  ('pygments.styles.vim',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\vim.py',
+   'PYMODULE'),
+  ('pygments.styles.borland',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\borland.py',
    'PYMODULE'),
   ('pygments.styles.stata',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\stata.py',
    'PYMODULE'),
-  ('pygments.styles.friendly',
+  ('pygments.styles.colorful',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\friendly.py',
-   'PYMODULE'),
-  ('pygments.styles',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\__init__.py',
-   'PYMODULE'),
-  ('pygments.styles.trac',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\trac.py',
-   'PYMODULE'),
-  ('pygments.styles.rrt',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\rrt.py',
-   'PYMODULE'),
-  ('pygments.styles.tango',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\tango.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\colorful.py',
    'PYMODULE'),
   ('pygments.styles.default',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\default.py',
    'PYMODULE'),
+  ('pygments.styles.monokai',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\monokai.py',
+   'PYMODULE'),
+  ('pygments.styles.arduino',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\arduino.py',
+   'PYMODULE'),
+  ('pygments.styles.sas',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\sas.py',
+   'PYMODULE'),
+  ('pygments.styles.autumn',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\autumn.py',
+   'PYMODULE'),
+  ('pygments.styles.vs',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\vs.py',
+   'PYMODULE'),
+  ('pygments.styles.algol',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\algol.py',
+   'PYMODULE'),
+  ('pygments.styles.friendly',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\friendly.py',
+   'PYMODULE'),
+  ('pygments.styles.fruity',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\fruity.py',
+   'PYMODULE'),
   ('pygments.styles.lovelace',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\lovelace.py',
    'PYMODULE'),
-  ('pygments.lexers.other',
+  ('pygments.styles.tango',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\other.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\tango.py',
    'PYMODULE'),
-  ('pygments.lexers.x10',
+  ('pygments.styles.pastie',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\x10.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\pastie.py',
+   'PYMODULE'),
+  ('pygments.styles.igor',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\igor.py',
+   'PYMODULE'),
+  ('pygments.styles.murphy',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\murphy.py',
+   'PYMODULE'),
+  ('pygments.styles.xcode',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\xcode.py',
+   'PYMODULE'),
+  ('pygments.styles.rrt',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\rrt.py',
+   'PYMODULE'),
+  ('pygments.styles.bw',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\bw.py',
+   'PYMODULE'),
+  ('pygments.styles',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\styles\\__init__.py',
+   'PYMODULE'),
+  ('pygments.lexers.html',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\html.py',
    'PYMODULE'),
   ('pygments.lexer',
    'C:\\Program '
@@ -3629,445 +3629,97 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\filter.py',
    'PYMODULE'),
-  ('pygments.lexers._cocoa_builtins',
+  ('pygments.lexers.css',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_cocoa_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.make',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\make.py',
-   'PYMODULE'),
-  ('pygments.lexers.forth',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\forth.py',
-   'PYMODULE'),
-  ('pygments.lexers.grammar_notation',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\grammar_notation.py',
-   'PYMODULE'),
-  ('pygments.lexers.php',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\php.py',
-   'PYMODULE'),
-  ('pygments.lexers.textedit',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\textedit.py',
-   'PYMODULE'),
-  ('pygments.lexers.stata',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\stata.py',
-   'PYMODULE'),
-  ('pygments.lexers.csound',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\csound.py',
-   'PYMODULE'),
-  ('pygments.lexers.webmisc',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\webmisc.py',
-   'PYMODULE'),
-  ('pygments.lexers._lasso_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_lasso_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.nimrod',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\nimrod.py',
-   'PYMODULE'),
-  ('pygments.lexers._stan_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_stan_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.trafficscript',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\trafficscript.py',
-   'PYMODULE'),
-  ('pygments.lexers.prolog',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\prolog.py',
-   'PYMODULE'),
-  ('pygments.lexers._openedge_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_openedge_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.fortran',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\fortran.py',
-   'PYMODULE'),
-  ('pygments.lexers.monte',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\monte.py',
-   'PYMODULE'),
-  ('pygments.lexers.ruby',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ruby.py',
-   'PYMODULE'),
-  ('pygments.lexers._sourcemod_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_sourcemod_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.archetype',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\archetype.py',
-   'PYMODULE'),
-  ('pygments.lexers.compiled',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\compiled.py',
-   'PYMODULE'),
-  ('pygments.lexers.sql',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\sql.py',
-   'PYMODULE'),
-  ('pygments.lexers.parsers',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\parsers.py',
-   'PYMODULE'),
-  ('pygments.lexers.iolang',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\iolang.py',
-   'PYMODULE'),
-  ('pygments.lexers.console',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\console.py',
-   'PYMODULE'),
-  ('pygments.lexers._tsql_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_tsql_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.tcl',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\tcl.py',
-   'PYMODULE'),
-  ('pygments.lexers.python',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\python.py',
-   'PYMODULE'),
-  ('pygments.lexers.clean',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\clean.py',
-   'PYMODULE'),
-  ('pygments.lexers.shell',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\shell.py',
-   'PYMODULE'),
-  ('pygments.lexers.fantom',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\fantom.py',
-   'PYMODULE'),
-  ('pygments.lexers.ecl',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ecl.py',
-   'PYMODULE'),
-  ('pygments.lexers.matlab',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\matlab.py',
-   'PYMODULE'),
-  ('pygments.lexers.theorem',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\theorem.py',
-   'PYMODULE'),
-  ('pygments.lexers._lua_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_lua_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.verification',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\verification.py',
-   'PYMODULE'),
-  ('pygments.lexers.special',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\special.py',
-   'PYMODULE'),
-  ('pygments.lexers.dylan',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dylan.py',
-   'PYMODULE'),
-  ('pygments.lexers.pascal',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\pascal.py',
-   'PYMODULE'),
-  ('pygments.scanner',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\scanner.py',
-   'PYMODULE'),
-  ('pygments.lexers.julia',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\julia.py',
-   'PYMODULE'),
-  ('pygments.lexers.automation',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\automation.py',
-   'PYMODULE'),
-  ('pygments.lexers.chapel',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\chapel.py',
-   'PYMODULE'),
-  ('pygments.lexers._mql_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_mql_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.haskell',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\haskell.py',
-   'PYMODULE'),
-  ('pygments.lexers.d',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\d.py',
-   'PYMODULE'),
-  ('pygments.lexers.urbi',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\urbi.py',
-   'PYMODULE'),
-  ('pygments.lexers.eiffel',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\eiffel.py',
-   'PYMODULE'),
-  ('pygments.lexers.int_fiction',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\int_fiction.py',
-   'PYMODULE'),
-  ('pygments.lexers.templates',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\templates.py',
-   'PYMODULE'),
-  ('pygments.lexers.dalvik',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dalvik.py',
-   'PYMODULE'),
-  ('pygments.lexers.smalltalk',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\smalltalk.py',
-   'PYMODULE'),
-  ('pygments.lexers.hexdump',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\hexdump.py',
-   'PYMODULE'),
-  ('pygments.lexers.go',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\go.py',
-   'PYMODULE'),
-  ('pygments.lexers._stata_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_stata_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.graph',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\graph.py',
-   'PYMODULE'),
-  ('pygments.lexers.whiley',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\whiley.py',
-   'PYMODULE'),
-  ('pygments.lexers.robotframework',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\robotframework.py',
-   'PYMODULE'),
-  ('pygments.lexers.erlang',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\erlang.py',
-   'PYMODULE'),
-  ('pygments.lexers.objective',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\objective.py',
-   'PYMODULE'),
-  ('pygments.lexers.idl',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\idl.py',
-   'PYMODULE'),
-  ('pygments.lexers._asy_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_asy_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.markup',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\markup.py',
-   'PYMODULE'),
-  ('pygments.lexers.javascript',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\javascript.py',
-   'PYMODULE'),
-  ('pygments.lexers._csound_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_csound_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.c_like',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\c_like.py',
-   'PYMODULE'),
-  ('pygments.lexers.xorg',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\xorg.py',
-   'PYMODULE'),
-  ('pygments.lexers.nit',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\nit.py',
-   'PYMODULE'),
-  ('pygments.lexers.basic',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\basic.py',
-   'PYMODULE'),
-  ('pygments.lexers.modeling',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\modeling.py',
-   'PYMODULE'),
-  ('pygments.lexers.dotnet',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dotnet.py',
-   'PYMODULE'),
-  ('pygments.lexers.ampl',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ampl.py',
-   'PYMODULE'),
-  ('pygments.lexers.business',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\business.py',
-   'PYMODULE'),
-  ('pygments.lexers._vim_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_vim_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.foxpro',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\foxpro.py',
-   'PYMODULE'),
-  ('pygments.lexers.sas',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\sas.py',
-   'PYMODULE'),
-  ('pygments.lexers.asm',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\asm.py',
-   'PYMODULE'),
-  ('pygments.lexers.ambient',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ambient.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\css.py',
    'PYMODULE'),
   ('pygments.lexers.perl',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\perl.py',
    'PYMODULE'),
-  ('pygments.lexers.ezhil',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ezhil.py',
-   'PYMODULE'),
-  ('pygments.lexers._postgres_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_postgres_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.parasail',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\parasail.py',
-   'PYMODULE'),
-  ('pygments.lexers.testing',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\testing.py',
-   'PYMODULE'),
   ('pygments.lexers.c_cpp',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\c_cpp.py',
-   'PYMODULE'),
-  ('pygments.lexers.hdl',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\hdl.py',
-   'PYMODULE'),
-  ('pygments.lexers.smv',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\smv.py',
-   'PYMODULE'),
-  ('pygments.lexers.nix',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\nix.py',
-   'PYMODULE'),
-  ('pygments.lexers.graphics',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\graphics.py',
-   'PYMODULE'),
-  ('pygments.lexers.diff',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\diff.py',
-   'PYMODULE'),
-  ('pygments.lexers._cl_builtins',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_cl_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.varnish',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\varnish.py',
-   'PYMODULE'),
-  ('pygments.lexers.ooc',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ooc.py',
-   'PYMODULE'),
-  ('pygments.lexers.html',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\html.py',
-   'PYMODULE'),
-  ('pygments.lexers.lisp',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\lisp.py',
-   'PYMODULE'),
-  ('pygments.lexers.apl',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\apl.py',
-   'PYMODULE'),
-  ('pygments.lexers.text',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\text.py',
-   'PYMODULE'),
-  ('pygments.lexers.crystal',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\crystal.py',
-   'PYMODULE'),
-  ('pygments.lexers.dsls',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dsls.py',
-   'PYMODULE'),
-  ('pygments.lexers.actionscript',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\actionscript.py',
-   'PYMODULE'),
-  ('pygments.lexers.resource',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\resource.py',
-   'PYMODULE'),
-  ('pygments.lexers.textfmts',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\textfmts.py',
-   'PYMODULE'),
-  ('pygments.lexers.scripting',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\scripting.py',
    'PYMODULE'),
   ('pygments.lexers.functional',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\functional.py',
    'PYMODULE'),
-  ('pygments.lexers.inferno',
+  ('pygments.lexers.testing',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\inferno.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\testing.py',
    'PYMODULE'),
-  ('pygments.lexers.oberon',
+  ('pygments.lexers.textedit',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\oberon.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\textedit.py',
    'PYMODULE'),
-  ('pygments.lexers._mapping',
+  ('pygments.lexers.snobol',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_mapping.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\snobol.py',
    'PYMODULE'),
-  ('pygments.lexers.jvm',
+  ('pygments.lexers.sas',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\jvm.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\sas.py',
    'PYMODULE'),
-  ('pygments.lexers.math',
+  ('pygments.lexers.dalvik',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\math.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dalvik.py',
    'PYMODULE'),
-  ('pygments.lexers.data',
+  ('pygments.lexers.praat',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\data.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\praat.py',
    'PYMODULE'),
-  ('pygments.lexers.configs',
+  ('pygments.lexers.grammar_notation',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\configs.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\grammar_notation.py',
+   'PYMODULE'),
+  ('pygments.lexers.ruby',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ruby.py',
+   'PYMODULE'),
+  ('pygments.lexers.elm',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\elm.py',
+   'PYMODULE'),
+  ('pygments.lexers.hdl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\hdl.py',
+   'PYMODULE'),
+  ('pygments.lexers.x10',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\x10.py',
+   'PYMODULE'),
+  ('pygments.lexers.make',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\make.py',
+   'PYMODULE'),
+  ('pygments.lexers.ncl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ncl.py',
+   'PYMODULE'),
+  ('pygments.lexers.modeling',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\modeling.py',
+   'PYMODULE'),
+  ('pygments.lexers._lua_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_lua_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.r',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\r.py',
+   'PYMODULE'),
+  ('pygments.lexers.parsers',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\parsers.py',
+   'PYMODULE'),
+  ('pygments.lexers.prolog',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\prolog.py',
+   'PYMODULE'),
+  ('pygments.lexers.algebra',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\algebra.py',
    'PYMODULE'),
   ('pygments.lexers',
    'C:\\Program '
@@ -4077,181 +3729,533 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\modeline.py',
    'PYMODULE'),
-  ('pygments.lexers._php_builtins',
+  ('pygments.lexers.typoscript',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_php_builtins.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\typoscript.py',
    'PYMODULE'),
-  ('pygments.lexers.rdf',
+  ('pygments.lexers.dotnet',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rdf.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dotnet.py',
    'PYMODULE'),
-  ('pygments.lexers.ml',
+  ('pygments.lexers.whiley',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ml.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\whiley.py',
    'PYMODULE'),
-  ('pygments.lexers.j',
+  ('pygments.lexers.archetype',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\j.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\archetype.py',
    'PYMODULE'),
-  ('pygments.lexers.bibtex',
+  ('pygments.lexers._stata_builtins',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\bibtex.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_stata_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers.haxe',
+  ('pygments.lexers.diff',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\haxe.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\diff.py',
    'PYMODULE'),
-  ('pygments.lexers.factor',
+  ('pygments.lexers._cl_builtins',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\factor.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_cl_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers._scilab_builtins',
+  ('pygments.lexers.trafficscript',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_scilab_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.r',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\r.py',
-   'PYMODULE'),
-  ('pygments.lexers.capnproto',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\capnproto.py',
-   'PYMODULE'),
-  ('pygments.lexers.web',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\web.py',
-   'PYMODULE'),
-  ('pygments.lexers.elm',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\elm.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\trafficscript.py',
    'PYMODULE'),
   ('pygments.lexers.agile',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\agile.py',
    'PYMODULE'),
-  ('pygments.unistring',
+  ('pygments.lexers.php',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\unistring.py',
-   'PYMODULE'),
-  ('pygments.lexers.praat',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\praat.py',
-   'PYMODULE'),
-  ('pygments.lexers.supercollider',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\supercollider.py',
-   'PYMODULE'),
-  ('pygments.lexers.rust',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rust.py',
-   'PYMODULE'),
-  ('pygments.lexers.igor',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\igor.py',
-   'PYMODULE'),
-  ('pygments.lexers.modula2',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\modula2.py',
-   'PYMODULE'),
-  ('pygments.lexers.css',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\css.py',
-   'PYMODULE'),
-  ('pygments.lexers.roboconf',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\roboconf.py',
-   'PYMODULE'),
-  ('pygments.lexers.installers',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\installers.py',
-   'PYMODULE'),
-  ('pygments.lexers.snobol',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\snobol.py',
-   'PYMODULE'),
-  ('pygments.lexers.algebra',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\algebra.py',
-   'PYMODULE'),
-  ('pygments.lexers.esoteric',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\esoteric.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\php.py',
    'PYMODULE'),
   ('pygments.lexers.rebol',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rebol.py',
    'PYMODULE'),
-  ('pygments.lexers.typoscript',
+  ('pygments.lexers.modula2',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\typoscript.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\modula2.py',
    'PYMODULE'),
-  ('pygments.lexers.ncl',
+  ('pygments.lexers.go',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ncl.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\go.py',
+   'PYMODULE'),
+  ('pygments.lexers._scilab_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_scilab_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.idl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\idl.py',
+   'PYMODULE'),
+  ('pygments.lexers.ampl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ampl.py',
+   'PYMODULE'),
+  ('pygments.lexers.c_like',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\c_like.py',
+   'PYMODULE'),
+  ('pygments.lexers.parasail',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\parasail.py',
+   'PYMODULE'),
+  ('pygments.lexers.asm',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\asm.py',
+   'PYMODULE'),
+  ('pygments.lexers.iolang',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\iolang.py',
+   'PYMODULE'),
+  ('pygments.lexers._csound_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_csound_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.supercollider',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\supercollider.py',
+   'PYMODULE'),
+  ('pygments.lexers.math',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\math.py',
+   'PYMODULE'),
+  ('pygments.lexers.julia',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\julia.py',
+   'PYMODULE'),
+  ('pygments.lexers._postgres_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_postgres_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.fantom',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\fantom.py',
+   'PYMODULE'),
+  ('pygments.lexers.console',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\console.py',
+   'PYMODULE'),
+  ('pygments.lexers.bibtex',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\bibtex.py',
+   'PYMODULE'),
+  ('pygments.lexers.textfmts',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\textfmts.py',
+   'PYMODULE'),
+  ('pygments.lexers._mql_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_mql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.int_fiction',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\int_fiction.py',
+   'PYMODULE'),
+  ('pygments.lexers.haxe',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\haxe.py',
+   'PYMODULE'),
+  ('pygments.lexers._mapping',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_mapping.py',
+   'PYMODULE'),
+  ('pygments.lexers.data',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\data.py',
+   'PYMODULE'),
+  ('pygments.lexers.chapel',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\chapel.py',
+   'PYMODULE'),
+  ('pygments.lexers.nix',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\nix.py',
+   'PYMODULE'),
+  ('pygments.lexers.resource',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\resource.py',
+   'PYMODULE'),
+  ('pygments.lexers._php_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_php_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.nimrod',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\nimrod.py',
+   'PYMODULE'),
+  ('pygments.lexers.objective',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\objective.py',
+   'PYMODULE'),
+  ('pygments.lexers.web',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\web.py',
+   'PYMODULE'),
+  ('pygments.lexers.varnish',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\varnish.py',
+   'PYMODULE'),
+  ('pygments.lexers.foxpro',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\foxpro.py',
+   'PYMODULE'),
+  ('pygments.lexers.tcl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\tcl.py',
+   'PYMODULE'),
+  ('pygments.lexers.igor',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\igor.py',
+   'PYMODULE'),
+  ('pygments.lexers.graphics',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\graphics.py',
+   'PYMODULE'),
+  ('pygments.lexers.dylan',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dylan.py',
+   'PYMODULE'),
+  ('pygments.lexers.javascript',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\javascript.py',
+   'PYMODULE'),
+  ('pygments.lexers.installers',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\installers.py',
+   'PYMODULE'),
+  ('pygments.lexers.fortran',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\fortran.py',
+   'PYMODULE'),
+  ('pygments.lexers.scripting',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\scripting.py',
+   'PYMODULE'),
+  ('pygments.lexers.smv',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\smv.py',
+   'PYMODULE'),
+  ('pygments.lexers.shell',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\shell.py',
+   'PYMODULE'),
+  ('pygments.lexers._lasso_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_lasso_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.ml',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ml.py',
+   'PYMODULE'),
+  ('pygments.lexers.ezhil',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ezhil.py',
+   'PYMODULE'),
+  ('pygments.lexers.robotframework',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\robotframework.py',
+   'PYMODULE'),
+  ('pygments.lexers.pascal',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\pascal.py',
+   'PYMODULE'),
+  ('pygments.scanner',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\scanner.py',
+   'PYMODULE'),
+  ('pygments.lexers.lisp',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\lisp.py',
+   'PYMODULE'),
+  ('pygments.lexers.markup',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\markup.py',
+   'PYMODULE'),
+  ('pygments.lexers.compiled',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\compiled.py',
+   'PYMODULE'),
+  ('pygments.lexers._vim_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_vim_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.forth',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\forth.py',
+   'PYMODULE'),
+  ('pygments.lexers.other',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\other.py',
+   'PYMODULE'),
+  ('pygments.lexers.xorg',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\xorg.py',
+   'PYMODULE'),
+  ('pygments.lexers.business',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\business.py',
+   'PYMODULE'),
+  ('pygments.lexers.automation',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\automation.py',
+   'PYMODULE'),
+  ('pygments.lexers.actionscript',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\actionscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.theorem',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\theorem.py',
+   'PYMODULE'),
+  ('pygments.lexers.sql',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\sql.py',
+   'PYMODULE'),
+  ('pygments.lexers.csound',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\csound.py',
+   'PYMODULE'),
+  ('pygments.lexers.oberon',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\oberon.py',
+   'PYMODULE'),
+  ('pygments.lexers.special',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\special.py',
+   'PYMODULE'),
+  ('pygments.lexers._cocoa_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_cocoa_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.webmisc',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\webmisc.py',
+   'PYMODULE'),
+  ('pygments.lexers.hexdump',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\hexdump.py',
+   'PYMODULE'),
+  ('pygments.lexers.roboconf',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\roboconf.py',
+   'PYMODULE'),
+  ('pygments.lexers.dsls',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\dsls.py',
+   'PYMODULE'),
+  ('pygments.lexers.crystal',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\crystal.py',
+   'PYMODULE'),
+  ('pygments.lexers.graph',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\graph.py',
+   'PYMODULE'),
+  ('pygments.lexers.haskell',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\haskell.py',
+   'PYMODULE'),
+  ('pygments.lexers.rdf',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rdf.py',
+   'PYMODULE'),
+  ('pygments.lexers.nit',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\nit.py',
    'PYMODULE'),
   ('pygments.lexers.felix',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\felix.py',
    'PYMODULE'),
+  ('pygments.lexers.clean',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\clean.py',
+   'PYMODULE'),
+  ('pygments.lexers.j',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\j.py',
+   'PYMODULE'),
+  ('pygments.lexers.urbi',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\urbi.py',
+   'PYMODULE'),
+  ('pygments.lexers._tsql_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_tsql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.d',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\d.py',
+   'PYMODULE'),
+  ('pygments.lexers.verification',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\verification.py',
+   'PYMODULE'),
+  ('pygments.lexers.esoteric',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\esoteric.py',
+   'PYMODULE'),
+  ('pygments.lexers.python',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\python.py',
+   'PYMODULE'),
+  ('pygments.lexers.monte',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\monte.py',
+   'PYMODULE'),
   ('pygments.lexers.pawn',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\pawn.py',
    'PYMODULE'),
-  ('pygments.lexers.rnc',
+  ('pygments.lexers._sourcemod_builtins',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rnc.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_sourcemod_builtins.py',
    'PYMODULE'),
   ('pygments.lexers.qvt',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\qvt.py',
    'PYMODULE'),
-  ('pygments.formatters.bbcode',
+  ('pygments.lexers.ooc',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\bbcode.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ooc.py',
+   'PYMODULE'),
+  ('pygments.lexers.smalltalk',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\smalltalk.py',
+   'PYMODULE'),
+  ('pygments.lexers.rust',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rust.py',
+   'PYMODULE'),
+  ('pygments.lexers.ecl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ecl.py',
+   'PYMODULE'),
+  ('pygments.lexers.templates',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\templates.py',
+   'PYMODULE'),
+  ('pygments.lexers.stata',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\stata.py',
+   'PYMODULE'),
+  ('pygments.lexers.jvm',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\jvm.py',
+   'PYMODULE'),
+  ('pygments.lexers.eiffel',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\eiffel.py',
+   'PYMODULE'),
+  ('pygments.lexers._openedge_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_openedge_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._stan_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_stan_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.ambient',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\ambient.py',
+   'PYMODULE'),
+  ('pygments.lexers.configs',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\configs.py',
+   'PYMODULE'),
+  ('pygments.lexers._asy_builtins',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\_asy_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.factor',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\factor.py',
+   'PYMODULE'),
+  ('pygments.lexers.inferno',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\inferno.py',
+   'PYMODULE'),
+  ('pygments.lexers.basic',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\basic.py',
+   'PYMODULE'),
+  ('pygments.lexers.capnproto',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\capnproto.py',
+   'PYMODULE'),
+  ('pygments.lexers.rnc',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\rnc.py',
+   'PYMODULE'),
+  ('pygments.lexers.erlang',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\erlang.py',
+   'PYMODULE'),
+  ('pygments.lexers.matlab',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\matlab.py',
+   'PYMODULE'),
+  ('pygments.lexers.apl',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\apl.py',
+   'PYMODULE'),
+  ('pygments.lexers.text',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\lexers\\text.py',
+   'PYMODULE'),
+  ('pygments.unistring',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\unistring.py',
+   'PYMODULE'),
+  ('pygments.formatters.irc',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\irc.py',
    'PYMODULE'),
   ('pygments.formatter',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatter.py',
    'PYMODULE'),
-  ('pygments.formatters.other',
+  ('pygments.formatters.rtf',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\other.py',
-   'PYMODULE'),
-  ('pygments.console',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\console.py',
-   'PYMODULE'),
-  ('pygments.formatters.terminal256',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\terminal256.py',
-   'PYMODULE'),
-  ('pygments.formatters.html',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\html.py',
-   'PYMODULE'),
-  ('pygments.formatters.terminal',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\terminal.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\rtf.py',
    'PYMODULE'),
   ('pygments.formatters.svg',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\svg.py',
    'PYMODULE'),
-  ('pygments.formatters.rtf',
+  ('pygments.formatters.terminal',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\rtf.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\terminal.py',
+   'PYMODULE'),
+  ('pygments.console',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\console.py',
+   'PYMODULE'),
+  ('pygments.formatters.other',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\other.py',
    'PYMODULE'),
   ('pygments.formatters.latex',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\latex.py',
    'PYMODULE'),
+  ('pygments.formatters.bbcode',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\bbcode.py',
+   'PYMODULE'),
+  ('pygments.formatters.terminal256',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\terminal256.py',
+   'PYMODULE'),
   ('pygments.formatters.img',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\img.py',
    'PYMODULE'),
-  ('pygments.formatters.irc',
+  ('pygments.formatters.html',
    'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\irc.py',
+   'Files\\Python\\Python37\\Lib\\site-packages\\pygments\\formatters\\html.py',
    'PYMODULE'),
   ('pygments.cmdline',
    'C:\\Program '
@@ -4260,6 +4264,232 @@
   ('notebook',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\__init__.py',
+   'PYMODULE'),
+  ('notebook.services.shutdown',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\services\\shutdown.py',
+   'PYMODULE'),
+  ('notebook.services',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\services\\__init__.py',
+   'PYMODULE'),
+  ('notebook.base.handlers',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\base\\handlers.py',
+   'PYMODULE'),
+  ('notebook.base',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\base\\__init__.py',
+   'PYMODULE'),
+  ('notebook.services.security',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\services\\security\\__init__.py',
+   'PYMODULE'),
+  ('notebook.utils',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\utils.py',
+   'PYMODULE'),
+  ('notebook.i18n',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\i18n\\__init__.py',
+   'PYMODULE'),
+  ('notebook._tz',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\notebook\\_tz.py',
+   'PYMODULE'),
+  ('notebook._sysinfo',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\_sysinfo.py',
+   'PYMODULE'),
+  ('prometheus_client',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\__init__.py',
+   'PYMODULE'),
+  ('prometheus_client.metrics',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\metrics.py',
+   'PYMODULE'),
+  ('prometheus_client.utils',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\utils.py',
+   'PYMODULE'),
+  ('prometheus_client.context_managers',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\context_managers.py',
+   'PYMODULE'),
+  ('prometheus_client.decorator',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\decorator.py',
+   'PYMODULE'),
+  ('prometheus_client.metrics_core',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\metrics_core.py',
+   'PYMODULE'),
+  ('prometheus_client.samples',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\samples.py',
+   'PYMODULE'),
+  ('prometheus_client.registry',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\registry.py',
+   'PYMODULE'),
+  ('prometheus_client.process_collector',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\process_collector.py',
+   'PYMODULE'),
+  ('prometheus_client.platform_collector',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\platform_collector.py',
+   'PYMODULE'),
+  ('prometheus_client.gc_collector',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\gc_collector.py',
+   'PYMODULE'),
+  ('prometheus_client.exposition',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\exposition.py',
+   'PYMODULE'),
+  ('prometheus_client.openmetrics.exposition',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\openmetrics\\exposition.py',
+   'PYMODULE'),
+  ('prometheus_client.openmetrics',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\openmetrics\\__init__.py',
+   'PYMODULE'),
+  ('wsgiref.simple_server',
+   'C:\\Program Files\\Python\\Python37\\Lib\\wsgiref\\simple_server.py',
+   'PYMODULE'),
+  ('wsgiref',
+   'C:\\Program Files\\Python\\Python37\\Lib\\wsgiref\\__init__.py',
+   'PYMODULE'),
+  ('wsgiref.handlers',
+   'C:\\Program Files\\Python\\Python37\\Lib\\wsgiref\\handlers.py',
+   'PYMODULE'),
+  ('wsgiref.headers',
+   'C:\\Program Files\\Python\\Python37\\Lib\\wsgiref\\headers.py',
+   'PYMODULE'),
+  ('wsgiref.util',
+   'C:\\Program Files\\Python\\Python37\\Lib\\wsgiref\\util.py',
+   'PYMODULE'),
+  ('prometheus_client.core',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\core.py',
+   'PYMODULE'),
+  ('prometheus_client.values',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\values.py',
+   'PYMODULE'),
+  ('prometheus_client.mmap_dict',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\prometheus_client\\mmap_dict.py',
+   'PYMODULE'),
+  ('jinja2',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\__init__.py',
+   'PYMODULE'),
+  ('jinja2.ext',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\ext.py',
+   'PYMODULE'),
+  ('jinja2._compat',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\_compat.py',
+   'PYMODULE'),
+  ('jinja2.defaults',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\defaults.py',
+   'PYMODULE'),
+  ('jinja2.tests',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\tests.py',
+   'PYMODULE'),
+  ('jinja2.asyncsupport',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\asyncsupport.py',
+   'PYMODULE'),
+  ('jinja2.asyncfilters',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\asyncfilters.py',
+   'PYMODULE'),
+  ('jinja2.utils',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\utils.py',
+   'PYMODULE'),
+  ('markupsafe',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\__init__.py',
+   'PYMODULE'),
+  ('markupsafe._native',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\_native.py',
+   'PYMODULE'),
+  ('markupsafe._constants',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\_constants.py',
+   'PYMODULE'),
+  ('markupsafe._compat',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\_compat.py',
+   'PYMODULE'),
+  ('jinja2.constants',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\constants.py',
+   'PYMODULE'),
+  ('jinja2.lexer',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\lexer.py',
+   'PYMODULE'),
+  ('jinja2.filters',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\filters.py',
+   'PYMODULE'),
+  ('jinja2.exceptions',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\exceptions.py',
+   'PYMODULE'),
+  ('jinja2.runtime',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\runtime.py',
+   'PYMODULE'),
+  ('jinja2.bccache',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\bccache.py',
+   'PYMODULE'),
+  ('jinja2.loaders',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\loaders.py',
+   'PYMODULE'),
+  ('jinja2.environment',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\environment.py',
+   'PYMODULE'),
+  ('jinja2.debug',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\debug.py',
+   'PYMODULE'),
+  ('jinja2.compiler',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\compiler.py',
+   'PYMODULE'),
+  ('jinja2.idtracking',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\idtracking.py',
+   'PYMODULE'),
+  ('jinja2.optimizer',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\optimizer.py',
+   'PYMODULE'),
+  ('jinja2.visitor',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\visitor.py',
+   'PYMODULE'),
+  ('jinja2.parser',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\parser.py',
+   'PYMODULE'),
+  ('jinja2.nodes',
+   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\nodes.py',
+   'PYMODULE'),
+  ('jinja2._identifier',
+   'C:\\Program '
+   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\_identifier.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Program Files\\Python\\Python37\\Lib\\ipaddress.py',
    'PYMODULE'),
   ('notebook._version',
    'C:\\Program '
@@ -4439,111 +4669,6 @@
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\nbconvert\\filters\\ansi.py',
    'PYMODULE'),
-  ('jinja2',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\__init__.py',
-   'PYMODULE'),
-  ('jinja2.ext',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\ext.py',
-   'PYMODULE'),
-  ('jinja2._compat',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\_compat.py',
-   'PYMODULE'),
-  ('jinja2.defaults',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\defaults.py',
-   'PYMODULE'),
-  ('jinja2.tests',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\tests.py',
-   'PYMODULE'),
-  ('jinja2.asyncsupport',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\asyncsupport.py',
-   'PYMODULE'),
-  ('jinja2.asyncfilters',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\asyncfilters.py',
-   'PYMODULE'),
-  ('jinja2.utils',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\utils.py',
-   'PYMODULE'),
-  ('markupsafe',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\__init__.py',
-   'PYMODULE'),
-  ('markupsafe._native',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\_native.py',
-   'PYMODULE'),
-  ('markupsafe._constants',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\_constants.py',
-   'PYMODULE'),
-  ('markupsafe._compat',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\markupsafe\\_compat.py',
-   'PYMODULE'),
-  ('jinja2.constants',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\constants.py',
-   'PYMODULE'),
-  ('jinja2.lexer',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\lexer.py',
-   'PYMODULE'),
-  ('jinja2.filters',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\filters.py',
-   'PYMODULE'),
-  ('jinja2.exceptions',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\exceptions.py',
-   'PYMODULE'),
-  ('jinja2.runtime',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\runtime.py',
-   'PYMODULE'),
-  ('jinja2.bccache',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\bccache.py',
-   'PYMODULE'),
-  ('jinja2.loaders',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\loaders.py',
-   'PYMODULE'),
-  ('jinja2.environment',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\environment.py',
-   'PYMODULE'),
-  ('jinja2.debug',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\debug.py',
-   'PYMODULE'),
-  ('jinja2.compiler',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\compiler.py',
-   'PYMODULE'),
-  ('jinja2.idtracking',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\idtracking.py',
-   'PYMODULE'),
-  ('jinja2.optimizer',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\optimizer.py',
-   'PYMODULE'),
-  ('jinja2.visitor',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\visitor.py',
-   'PYMODULE'),
-  ('jinja2.parser',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\parser.py',
-   'PYMODULE'),
-  ('jinja2.nodes',
-   'C:\\Program Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\nodes.py',
-   'PYMODULE'),
-  ('jinja2._identifier',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\jinja2\\_identifier.py',
-   'PYMODULE'),
   ('nbconvert.exporters',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\nbconvert\\exporters\\__init__.py',
@@ -4621,14 +4746,6 @@
   ('notebook.services.contents',
    'C:\\Program '
    'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\services\\contents\\__init__.py',
-   'PYMODULE'),
-  ('notebook.services',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\services\\__init__.py',
-   'PYMODULE'),
-  ('notebook.utils',
-   'C:\\Program '
-   'Files\\Python\\Python37\\Lib\\site-packages\\notebook\\utils.py',
    'PYMODULE'),
   ('IPython.utils.PyColorize',
    'C:\\Program '
