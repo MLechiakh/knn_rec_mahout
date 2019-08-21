@@ -78,7 +78,7 @@ a training set and test set files in Datasets folder, these tasks are performed 
 *  Use of Python project and creation of the LBNN graph file(KNN graph)
 
 The program generates the KNN graph file(named LBNN graph) using the Traing set file by launching the python script which responsable on excuting the algorithm and storing 
-the result(LBNN graph) as a JSON file called KNNG_LBNN.txt' whose its path is specified in config.properties file, the function that  lunches this script is `runScript`
+the result(LBNN graph) as a JSON file called **KNNG_LBNN**.txt whose its path is specified in **config.properties** file, the function that  lunches this script is `runScript`
 in `MyRecommenderBuilder` class.
 
 
@@ -99,7 +99,7 @@ function in the `MyRecommenderBuilder` class :
 The Main class binds all the previous class and it calls the functions to make the calculations for either the Recall and Precision or the RMSE and MAE.
 
 Note that the configuration made for this project is supposed to run on a unix OS, if you want to run you experiments in a windows os, you should modify the Paths in Main.java
-MainBruteForce.java and MyRecommenderBuilder.java to math the windows environment (change / by \\ for example: /Datasets/ by \\Datasets\\), then export the jar files with this 
+MainBruteForce.java and **MyRecommenderBuilder.java** to math the windows environment (change / by \\ for example: /Datasets/ by \\Datasets\\), then export the jar files with this 
 new configurations.
 
 For Tests on servers or if you want to run these tow functionalities(1 and 2) explained obove with a jar executable, you can use **bf_mahout** jar file for the Brute force related
