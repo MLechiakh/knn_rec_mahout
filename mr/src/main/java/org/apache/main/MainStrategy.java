@@ -2,38 +2,29 @@ package org.apache.main;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.eval.IRStatistics;
 import org.apache.mahout.cf.taste.eval.PredictionStatistics;
-import org.apache.mahout.cf.taste.eval.RecommenderBuilder;
 import org.apache.mahout.cf.taste.impl.eval.KFoldRecommenderIRStatsEvaluator;
 import org.apache.mahout.cf.taste.impl.eval.KFoldRecommenderPredictionEvaluator;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.impl.recommender.ParseFile;
 import org.apache.mahout.cf.taste.model.DataModel;
 import org.apache.recommenders.BinderRecommenderBuilder;
-import org.apache.recommenders.MyRecommenderBuilder;
 
+public class MainStrategy {
+	
+public static void main(String[] args) {
 
-
-/* ********************************************
-// you should pass argument to compile this main class: FILE_NAME  accuracy||error  threshold  graph_learning||sym_graph_learning (nbr_recommendation)* 
- * Example: Java Main.java TestSet0 accuracy 3 graph_learning 10 20
- * in config.properies you can specify the path of the log file 
-******************************************** */
-public class Main {
-
-	 
-	public static void main(String[] args) {
-
-		
+		List<Double> recalls = new ArrayList<Double>() ;
+		List<Double> precisions = new ArrayList<Double>() ;
 		ParseFile p;
 		float threshold=Float.parseFloat(args[2]) ;
 		String rootPath= System.getProperty("user.dir") ;
@@ -41,6 +32,8 @@ public class Main {
 		config = new Properties();
 		FileInputStream fis;
 		
+		String strategy="allitems" ; /* testitems or trainingitems or testratings or relplusrandom */
+		String knnOUlbnn="knn" ;
 		String fileName= args[0]; // dataset name
 		try {
 			fis= new FileInputStream(rootPath+"/config.properties");
@@ -64,15 +57,10 @@ public class Main {
 			
 			IRStatistics irstats = null ;
 
-//			List<RecommendedItem> recommendations = recommender.recommend(2, 3);
-//			for (RecommendedItem recommendation : recommendations) {
-//				System.out.println(recommendation);
-//			}
 			try {
 			DataModel model = new FileDataModel(new File(rootPath+"/Datasets/"+fileName+".csv"));
 			//args[3]: graph_learning or sym_graph_learning
-			//RecommenderBuilder builder = new MyRecommenderBuilder(config.getProperty("PATH_TO_LBNNG_BY_PYTHON"), args[3], threshold); 
-			BinderRecommenderBuilder strategy_builder = new BinderRecommenderBuilder("testratings", threshold, "lbnn", config.getProperty("PATH_TO_LBNNG_BY_PYTHON"), args[3], 30) ;
+			BinderRecommenderBuilder strategy_builder = new BinderRecommenderBuilder(strategy, threshold, knnOUlbnn, config.getProperty("PATH_TO_LBNNG_BY_PYTHON"), args[3], 50) ;
 			
 			/* Measure of MAE and RMSE of recommenders */
 			if(args[1].equals("error")) {
@@ -91,13 +79,22 @@ public class Main {
 				while(pp<args.length) {
 					KFoldRecommenderIRStatsEvaluator evaluatorIRStats = new KFoldRecommenderIRStatsEvaluator(model, 5); /* 5-fold */
 					irstats = evaluatorIRStats.evaluate(strategy_builder, Integer.parseInt(args[pp]), threshold);
-					System.out.println("****************** Precision and Recall of brute force recommenders *******************");
-					System.out.println("number of recommanded items: "+args[pp]);
-					System.out.println("Threshold: "+threshold);
-					System.out.println();
-					System.out.println("Precision: "+irstats.getPrecision());
-					System.out.println("Recall: "+irstats.getRecall());
+					recalls.add(irstats.getRecall()) ;
+					precisions.add(irstats.getPrecision()) ;
 					pp++ ;
+				}
+				System.out.println("****************** Precision and Recall of brute force recommenders *******************");
+				System.out.println("number of recommanded items: "+pp);
+				System.out.println("Threshold: "+threshold);
+				System.out.println("Recalls: ");
+				for(int i=0;i<recalls.size();i++) {
+					System.out.print(", "+recalls.get(i));
+				}
+				System.out.println("Precisions: ");
+
+				for(int j=0;j<precisions.size();j++) {
+					System.out.print(","+precisions.get(j));
+
 				}
 			}
 			
@@ -110,4 +107,6 @@ public class Main {
 				e.printStackTrace();
 			}	
 		}
-	}
+	
+
+}

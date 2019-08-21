@@ -17,6 +17,7 @@ import org.apache.mahout.cf.taste.impl.eval.KFoldRecommenderIRStatsEvaluator;
 import org.apache.mahout.cf.taste.impl.eval.KFoldRecommenderPredictionEvaluator;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.model.DataModel;
+import org.apache.recommenders.MyRecommenderBuilder1;
 
 public class MainBruteForce {
 

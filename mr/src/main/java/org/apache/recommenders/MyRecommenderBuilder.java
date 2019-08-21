@@ -1,7 +1,8 @@
-package org.apache.main;
+package org.apache.recommenders;
 
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,6 +11,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.mahout.cf.taste.common.TasteException;
 import org.apache.mahout.cf.taste.eval.RecommenderBuilder;
@@ -33,10 +35,13 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 
 	ParseFile p;
 	Process mProcess;
+	
 	String rootPath= System.getProperty("user.dir") ;
 	String path_LBNNG=null ;
+	
 	// weither it's symetric on no symetric lbnn
 	String type_lbnn=null ;
+	
 	float threshold=3 ;
 	public MyRecommenderBuilder(ParseFile p) throws IOException {
 		this.p = p;
@@ -54,16 +59,31 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 		
 	}
 	
-	@SuppressWarnings("unchecked")
 	@Override
 	public Recommender buildRecommender(DataModel dataModel, Fold fold) throws TasteException {
-		
+		ParseFile p= buildIt(fold) ;
+		UserNeighborhood neighborhood= new UserNeighborhoodImpl(p.getJsonObject()) ;
+		UserSimilarity similarity = new UserSimilarityIml(p.getJsonObject()) ;
+		UserBasedRecommender recommender = new GenericUserBasedRecommender(dataModel, neighborhood, similarity);
+		return recommender;
+	}
+	
+	
+	@SuppressWarnings("unchecked")
+	ParseFile buildIt(Fold fold) {
 		String generatedKnngFilePath="/KNNG_LBNN.txt" ;
 		String generatedTrainFilePath="/Datasets/fold_train.data" ;
 		String generatedTestFilePath="/Datasets/fold_test.data" ;
 
-		Object[] arrays= buildTrain(fold.getTraining()) ;
-		Object[] arraysTests= buildTest(fold.getTesting()) ;
+		Object[] arrays=null;
+		Object[] arraysTests=null;
+		try {
+			arrays = buildTrain(fold.getTraining());
+			arraysTests= buildTest(fold.getTesting()) ;
+
+		} catch (TasteException e1) {
+			e1.printStackTrace();
+		}
 		
 
 		//for training building
@@ -85,6 +105,17 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 		System.out.println("Before lunching pyhton file");
 		System.out.println(rootPath+generatedTrainFilePath);
 		runScript(rootPath+generatedTrainFilePath, path_LBNNG, type_lbnn, threshold);
+		File myFile= new File(path_LBNNG+generatedKnngFilePath);
+
+		while(!myFile.exists()) {
+			try {
+				TimeUnit.SECONDS.sleep(10);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+		}
+			
 		System.out.println("After lunching pyhton file");
 		
 		try {
@@ -95,12 +126,11 @@ public class MyRecommenderBuilder implements RecommenderBuilder{
 			e.printStackTrace();
 		}
 		
-		  
-		UserNeighborhood neighborhood= new UserNeighborhoodImpl(p.getJsonObject()) ;
-		UserSimilarity similarity = new UserSimilarityIml(p.getJsonObject()) ;
-		UserBasedRecommender recommender = new GenericUserBasedRecommender(dataModel, neighborhood, similarity);
-		return recommender;
+		return p ;
 	}
+	
+	
+	
 	
 	
 	Object[] buildTrain(DataModel fold) throws TasteException {
@@ -218,7 +248,7 @@ Object[] buildTest(FastByIDMap<PreferenceArray> fold) throws TasteException {
 	public void runScript(String arg1, String arg2, String type_lbnn, float threshold){
 	    Process process;
 		try{
-	          process = Runtime.getRuntime().exec(new String[]{rootPath+"/py_scripts/dist/"+type_lbnn,arg1,arg2,arg1, Float.toString(threshold)});
+	          process = Runtime.getRuntime().exec(new String[]{rootPath+"/py_scripts/dist/"+type_lbnn,arg1,arg2, Float.toString(threshold)});
 	          mProcess = process;
 	    }catch(Exception e) {
 	       System.out.println("Exception Raised" + e.toString());

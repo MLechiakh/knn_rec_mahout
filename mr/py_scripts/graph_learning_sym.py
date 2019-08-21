@@ -156,7 +156,7 @@ def graph_discovery(list_user, list_movies, mu=1, la=1):
     # init step
 
     mult = (ss.T.dot(ss))
-    mult = (sparse.linalg.norm(mult))   
+    mult = (sparse.linalg.norm(mult))
 
     gamma = 1 / ((mu / 2) * (
             np.linalg.norm((z)) + mult + 2 * la * (mu / 2)))
